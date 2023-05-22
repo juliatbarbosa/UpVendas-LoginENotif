@@ -1,0 +1,401 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap');
+
+
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    background-color: #f9f9f9;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.card {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: 100vh;
+    
+}
+
+.container-card {
+    width: 350px;
+    height: 280px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 10px;
+    box-shadow: 0px 0px 15px rgb(207, 205, 205);
+    background-color: white;
+}
+
+.logo {
+    margin-top: 20px;
+}
+
+.logo img {
+    width: 70px;
+}
+
+.inputLogin {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+
+}
+
+.inputContainer {
+    position: relative;
+    height: 35px;
+    width: 300px;
+    margin-top: 10px;
+    margin-bottom: 17px;
+
+}
+
+.input {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    border: 1px solid rgb(170, 170, 170);
+    border-radius: 8px;
+    font-size: 10px;
+    padding: 0 20px;
+    outline: none;
+    background: none;
+    z-index: 1;
+    
+
+}
+
+.label {
+    position: absolute;
+    top: -7px;
+    left: 3px;
+    padding: 0 4px;
+    background-color: white;
+    color: rgb(170, 170, 170);
+    font-size: 10px;
+    transition: 0.5s;
+    z-index: 10;
+
+
+}
+
+.input:focus {
+    border: 1px solid #11cc59;
+    
+}
+
+.input:focus+.label {
+    top: -7px;
+    left: 3px;
+    z-index: 10;
+    font-size: 10px;
+    color: #11cc59;
+    
+
+
+}
+
+.submitBtn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 300px;
+    height: 35px;
+    padding: 10px 0px;
+    border: none;
+    background-color: #11cc59;
+    color: white;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 12px;
+    margin-top: 3px;
+    font-weight: bold;
+}
+
+a {
+    text-decoration: none;
+}
+
+/* --------------------------------------------------------------------------------------------------------------------------------------- */
+/* ---------------------------------------------------PAGE NOTIFICAÇÕES------------------------------------------------------------------- */
+/* --------------------------------------------------------------------------------------------------------------------------------------- */
+
+.container-page {
+    display: flex;
+    justify-content: start;
+    align-items: start;
+    margin: 10px;
+}
+
+.container-icones {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: center;
+}
+
+.icon-menu img {
+    margin: 0 0 5px 5px;
+    width: 28px;
+}
+
+.icon img {
+    margin: 10px 0 5px 5px;
+    width: 28px;
+}
+
+#icon-branco {
+    width: 45px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #11cc59;
+    border-radius: 10px;
+}
+
+.principal {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+}
+
+.topo {
+    display: flex;
+    justify-content: space-between;
+    flex: 1;
+    margin: 0 0 5px 10px;
+}
+
+.container-notificacao p {
+    font-weight: 500;
+    font-size: 20px;
+}
+
+.notif-text {
+    display: flex;
+    flex-direction: column;
+
+}
+
+.notif-text img {
+    width: 35px;
+    height: 3px;
+    margin-bottom: 16px;
+}
+
+.pesquisa {
+    padding-left: 32px;
+    padding-top: 3px;
+    width: 600px;
+    height: 30px;
+    border-radius: 6px;
+    border: transparent;
+    box-shadow: 0px 0px 15px rgb(207, 205, 205);
+    background-image: url('assets/images/icons/lupa-verde.png');
+    background-repeat: no-repeat;
+    background-size: 18px;
+    background-position: left 2% center;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.container-dados {
+    display: flex;
+    justify-content: end;
+    gap: 12px;
+}
+
+.content-dados-text {
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+}
+
+.content-dados-text p {
+    font-size: 14px;
+}
+
+.icones-dados {
+    display: flex;
+    gap: 5px;
+    justify-content: center;
+}
+
+.icone-lateral {
+    display: flex;
+    justify-content: center;
+    padding: 5px 10px;
+    background-color: white;
+    box-shadow: 0px 0px 15px rgb(207, 205, 205);
+    border-radius: 10px;
+}
+
+.icone-lateral img {
+    width: 24px;
+}
+
+.container-direita {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+/* ----------------TABELA -------------------- */
+
+.tabela{
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+    margin: 0px 10px 10px 10px;
+    border-radius: 10px;
+}
+
+
+thead, tbody {
+    display: block;
+    border-radius: 0 0 10px 10px;
+}
+
+tbody {
+    overflow-y: scroll;
+    height: 500px;
+    padding-right: 10px;
+    background-color: white;
+}
+
+tbody::-webkit-scrollbar {
+    width: 5px;
+    height: 8px;
+}
+
+tbody::-webkit-scrollbar-track {
+    border: 1px solid white;
+    border-radius: 20px;
+    background: white;
+}
+
+tbody::-webkit-scrollbar-thumb {
+    background-color: #bebebe;
+    border-radius: 20px;
+}
+
+.styled-table {
+    width: 100%;
+    height: 500px;
+    font-size: 12px;
+    border-radius: 10px;
+}
+
+
+.styled-table thead {
+    width: 100%;
+
+}
+
+.styled-table tr {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+.styled-table td {
+    text-align: left;
+    width: 100%;
+    height: 30px;
+    padding: 5px 20px;
+}
+
+.styled-table thead td {
+    top: 0;
+    width: 100%;
+    height: 30px;
+    border-bottom: 2px solid #11cc59;
+    background-color: white;
+    color: #3f4755;
+    text-align: left;
+    position: sticky;
+    padding: 5px 20px;
+    
+}
+
+.styled-table img {
+    width: 20px;
+}
+
+table.styled-table tr:nth-child(even){
+    background-color:#f6f6f6;
+}
+
+table.styled-table tr:nth-child(odd){
+    background-color: white;
+}
+
+.id {
+    width: 20% !important;
+    height: 30px;
+}
+
+
+
+/* ----------------FINAL------------------ */
+
+.textRodape {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding: 15px 10px 0px 10px;
+}
+
+.textRodape p {
+    font-size: 12px;
+    color: #3f4755;
+}
+
+.textDireita {
+    display: flex;
+    justify-content: space-between;
+    gap: 12px;
+}
+
+.textEsquerda p {
+    font-weight: bold;
+}
+
+.text1 {
+    width: 160px;
+    height: 30px;
+    padding: 5px 5px;
+    box-shadow: 0px 0px 15px rgb(207, 205, 205);
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+}
+
+.text1 img {
+    height: 12px;
+}
+
+.text2 {
+    width: 90px;
+    height: 30px;
+    padding: 5px 5px;
+    box-shadow: 0px 0px 15px rgb(207, 205, 205);
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+}
+
+.text2 img {
+    width: 12px;
+}

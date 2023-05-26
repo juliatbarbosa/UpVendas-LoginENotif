@@ -103,7 +103,7 @@ body {
 
 }
 
-.submitBtn {
+.submit {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -116,12 +116,17 @@ body {
     border-radius: 6px;
     cursor: pointer;
     font-size: 12px;
-    margin-top: 3px;
+    margin-top: 10px;
     font-weight: bold;
 }
 
 a {
     text-decoration: none;
+}
+
+#textForm {
+    font-size: 10px;
+    color: red;
 }
 
 /* --------------------------------------------------------------------------------------------------------------------------------------- */

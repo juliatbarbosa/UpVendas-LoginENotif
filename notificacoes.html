@@ -6,15 +6,85 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
+
+
     <title>Notificações</title>
 </head>
 
 <body>
+
+    <div id="myNav" class="overlay">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">
+            <img class= "icon-close" src="assets/images/icons/list.png" alt="">
+        </a>
+        <div id="overlay-content">
+            <a href="#">
+                <div class="menu-content">
+                    <div class="icon-text">
+                        <img src="assets/images/icons/house-cinza.png">
+                        <p>Home</p>
+                    </div>
+                </div>
+            </a>
+
+            <a href="#">
+                <div class="menu-content">
+                    <div class="icon-text">
+                        <img src="assets/images/icons/coin-cinza.png" alt="">
+                        <p>Financeiro</p>
+                    </div>
+                    <img class="seta-menu" src="assets/images/icons/seta-para-baixo.png" alt="">
+                </div>
+            </a>
+
+            <a href="#">
+                <div class="menu-content">
+                    <div class="icon-text">
+                        <img src="assets/images/icons/cooperation-cinza.png" alt="">
+                        <p>Comercial</p>
+                    </div>
+                    <img class="seta-menu" src="assets/images/icons/seta-para-baixo.png" alt="">
+
+                </div>
+            </a>
+            <a href="#">
+                <div class="menu-content" id="notif-menu">
+                    <div class="icon-text">
+                        <img src="assets/images/icons/notification-branco.png" alt="">
+                        <p>Notificações</p>
+                    </div>
+                    <img class="seta-menu" src="assets/images/icons/seta-para-baixo-branca.png" alt="">
+                </div>
+            </a>
+            <a href="#">
+                <div class="menu-content">
+                    <div class="icon-text">
+                        <img src="assets/images/icons/ecommerce-cinza.png" alt="">
+                        <p>Ecommerce</p>
+                    </div>
+                    <img class="seta-menu" src="assets/images/icons/seta-para-baixo.png" alt="">
+                </div>
+            </a>
+            <a href="#">
+                <div class="menu-content">
+                    <div class="icon-text">
+                        <img src="assets/images/icons/top-up-cinza.png" alt="">
+                        <p>Empréstimo</p>
+                    </div>
+                    <img class="seta-menu" src="assets/images/icons/seta-para-baixo.png" alt="">
+                </div>
+            </a>
+        </div>
+    </div>
+
+
     <div class="container-page">
         <div class="container-icones">
             <div class="icones">
                 <div class="icon-menu">
-                    <img src="assets/images/icons/list.png" alt="">
+                    <button class="nav-button" onclick="openNav()">
+                        <img src="assets/images/icons/list.png" alt="">
+                    </button>
                 </div>
                 <div class="icon">
                     <img src="assets/images/icons/house-cinza.png" alt="">
@@ -42,6 +112,8 @@
                 </div>
             </div>
         </div>
+
+
         <div class="principal">
             <div class="topo">
                 <div class="container-notificacao">
@@ -74,8 +146,10 @@
                     </div>
                 </div>
             </div>
+
+
             <div class="tabela">
-                <table class="styled-table" >
+                <table class="styled-table">
                     <thead>
                         <tr>
                             <td class="id">ID</td>
@@ -84,8 +158,8 @@
                             <td>Mensagem</td>
                             <td>Status</td>
                             <td class="id"></td>
-                            
-                            
+
+
                         </tr>
                     </thead>
                     <tbody>
@@ -329,8 +403,8 @@
                             <td>Enviando...</td>
                             <td class="id"><img src="assets/images/icons/paper-plane-right.png" alt=""></td>
                         </tr>
-                        
-                        
+
+
                     </tbody>
                 </table>
             </div>
@@ -351,139 +425,8 @@
                 </div>
             </div>
         </div>
-        
     </div>
+    <script src="notificacoes.js"></script>
 </body>
 
 </html>
-
-<!-- 
-    <tr>
-                            <td>ID Notificação</td>
-                            <td>Data</td>
-                            <td>Descrição</td>
-                            <td>Mensagem</td>
-                            <td>Status</td>
-                            <td></td>
-                        </tr>
-                        <tr>
-                            <td>260</td>
-                            <td>12/05/2023</td>
-                            <td>Motivação e persistência</td>
-                            <td>São a chave para bater sa meta do mês</td>
-                            <td>Enviando...</td>
-                            <td><img src="assets/images/icons/paper-plane-right.png" alt=""></td>
-                        </tr>
-                        <tr>
-                            <td>260</td>
-                            <td>12/05/2023</td>
-                            <td>Motivação e persistência</td>
-                            <td>São a chave para bater sa meta do mês</td>
-                            <td>Enviando...</td>
-                            <td><img src="assets/images/icons/paper-plane-right.png" alt=""></td>
-                        </tr>
-                        <tr>
-                            <td>260</td>
-                            <td>12/05/2023</td>
-                            <td>Motivação e persistência</td>
-                            <td>São a chave para bater sa meta do mês</td>
-                            <td>Enviando...</td>
-                            <td><img src="assets/images/icons/paper-plane-right.png" alt=""></td>
-                        </tr>
-                        <tr>
-                            <td>260</td>
-                            <td>12/05/2023</td>
-                            <td>Motivação e persistência</td>
-                            <td>São a chave para bater sa meta do mês</td>
-                            <td>Enviando...</td>
-                            <td><img src="assets/images/icons/paper-plane-right.png" alt=""></td>
-                        </tr>
-                        <tr>
-                            <td>260</td>
-                            <td>12/05/2023</td>
-                            <td>Motivação e persistência</td>
-                            <td>São a chave para bater sa meta do mês</td>
-                            <td>Enviando...</td>
-                            <td><img src="assets/images/icons/paper-plane-right.png" alt=""></td>
-                        </tr>
-                        <tr>
-                            <td>260</td>
-                            <td>12/05/2023</td>
-                            <td>Motivação e persistência</td>
-                            <td>São a chave para bater sa meta do mês</td>
-                            <td>Enviando...</td>
-                            <td><img src="assets/images/icons/paper-plane-right.png" alt=""></td>
-                        </tr>
-                        <tr>
-                            <td>260</td>
-                            <td>12/05/2023</td>
-                            <td>Motivação e persistência</td>
-                            <td>São a chave para bater sa meta do mês</td>
-                            <td>Enviando...</td>
-                            <td><img src="assets/images/icons/paper-plane-right.png" alt=""></td>
-                        </tr>
-                        <tr>
-                            <td>260</td>
-                            <td>12/05/2023</td>
-                            <td>Motivação e persistência</td>
-                            <td>São a chave para bater sa meta do mês</td>
-                            <td>Enviando...</td>
-                            <td><img src="assets/images/icons/paper-plane-right.png" alt=""></td>
-                        </tr>
-                        <tr>
-                            <td>260</td>
-                            <td>12/05/2023</td>
-                            <td>Motivação e persistência</td>
-                            <td>São a chave para bater sa meta do mês</td>
-                            <td>Enviando...</td>
-                            <td><img src="assets/images/icons/paper-plane-right.png" alt=""></td>
-                        </tr>
-                        <tr>
-                            <td>260</td>
-                            <td>12/05/2023</td>
-                            <td>Motivação e persistência</td>
-                            <td>São a chave para bater sa meta do mês</td>
-                            <td>Enviando...</td>
-                            <td><img src="assets/images/icons/paper-plane-right.png" alt=""></td>
-                        </tr>
-                        <tr>
-                            <td>260</td>
-                            <td>12/05/2023</td>
-                            <td>Motivação e persistência</td>
-                            <td>São a chave para bater sa meta do mês</td>
-                            <td>Enviando...</td>
-                            <td><img src="assets/images/icons/paper-plane-right.png" alt=""></td>
-                        </tr>
-                        <tr>
-                            <td>260</td>
-                            <td>12/05/2023</td>
-                            <td>Motivação e persistência</td>
-                            <td>São a chave para bater sa meta do mês</td>
-                            <td>Enviando...</td>
-                            <td><img src="assets/images/icons/paper-plane-right.png" alt=""></td>
-                        </tr>
-                        <tr>
-                            <td>260</td>
-                            <td>12/05/2023</td>
-                            <td>Motivação e persistência</td>
-                            <td>São a chave para bater sa meta do mês</td>
-                            <td>Enviando...</td>
-                            <td><img src="assets/images/icons/paper-plane-right.png" alt=""></td>
-                        </tr>
-                        <tr>
-                            <td>260</td>
-                            <td>12/05/2023</td>
-                            <td>Motivação e persistência</td>
-                            <td>São a chave para bater sa meta do mês</td>
-                            <td>Enviando...</td>
-                            <td><img src="assets/images/icons/paper-plane-right.png" alt=""></td>
-                        </tr>
-                        <tr>
-                            <td>260</td>
-                            <td>12/05/2023</td>
-                            <td>Motivação e persistência</td>
-                            <td>São a chave para bater sa meta do mês</td>
-                            <td>Enviando...</td>
-                            <td><img src="assets/images/icons/paper-plane-right.png" alt=""></td>
-                        </tr>
- -->

@@ -140,6 +140,28 @@ a {
     margin: 10px;
 }
 
+#myNav img {
+    width: 28px;
+}
+
+.nav-button {
+    border: 0;
+    background-color: transparent;
+    cursor: pointer;
+}
+
+.overlay {
+    background-color: #f6f6f6;
+    width: 0;
+    height: 100%;
+    z-index: 9;
+    position: fixed;
+    top: 0;
+    left: 0;
+    overflow-x: hidden;
+    transition: all ease 0.5s;
+}
+
 .container-icones {
     display: flex;
     flex-direction: column;
@@ -147,9 +169,56 @@ a {
     justify-content: center;
 }
 
+
+.close-menu {
+    border: 0;
+    background-color: transparent;
+}
+
+.menu-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+    width: 250px;
+    border-radius: 8px;
+    margin: 0 12px;
+}
+
+.icon-text {
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    gap: 20px;
+}
+
+.menu-content img {
+    margin: 5px 0 5px 5px;
+}
+
+.seta-menu{
+    width: 15px;
+}
+
+#notif-menu{
+    background-color: #11cc59;
+    color: white;
+}
+
+#notif-menu img{
+    width: 28px;
+}
+
 .icon-menu img {
     margin: 0 0 5px 5px;
     width: 28px;
+    border: 0;
+}
+
+.icon-close {
+    margin: 10px 0 5px 15px;
+    width: 28px;
+    border: 0;
 }
 
 .icon img {

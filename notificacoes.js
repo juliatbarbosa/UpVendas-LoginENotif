@@ -1,7 +1,5 @@
 var menu = document.getElementById('botao-open')
-
 var container = document.querySelector('.container-icones')
-
 var notif = document.querySelector('.icon-notif')
 
 menu.onclick = e => {

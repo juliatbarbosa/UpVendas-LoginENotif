@@ -6,122 +6,74 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
-
-
     <title>Notificações</title>
 </head>
 
 <body>
-
-    <div id="myNav" class="menu">
-        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">
-            <img class="icon-close" src="assets/images/icons/list.png" alt="">
-        </a>
-        <div id="menu-content">
-            <a href="#">
-                <div class="menu-content">
-                    <div class="icon-text">
-                        <img src="assets/images/icons/house-cinza.png">
-                        <p>Home</p>
-                    </div>
-                </div>
-            </a>
-
-            <a href="#">
-                <div class="menu-content">
-                    <div class="icon-text">
-                        <img class="icones-menu" src="assets/images/icons/coin-cinza.png" alt="">
-                        <p>Financeiro</p>
-                    </div>
-                    <img class="seta-menu" src="assets/images/icons/seta-para-baixo.png" alt="">
-                </div>
-            </a>
-
-            <a href="#">
-                <div class="menu-content">
-                    <div class="icon-text">
-                        <img class="icones-menu" src="assets/images/icons/cooperation-cinza.png" alt="">
-                        <p>Comercial</p>
-                    </div>
-                    <img class="seta-menu" src="assets/images/icons/seta-para-baixo.png" alt="">
-
-                </div>
-            </a>
-
-            <a href="#">
-                <a href="#" onclick="closeNav()">
-                    <div class="menu-content" id="notif-menu">
-                        <div class="icon-text">
-                            <img class="icones-menu" src="assets/images/icons/notification-branco.png" alt="">
-                            <p>Notificações</p>
-                            <img class="seta-menu" src="assets/images/icons/seta-para-baixo-branca.png" alt="">
-                        </div>
-                </a>
-        </div>
-        </a>
-
-        <a href="#">
-            <div class="menu-content">
-                <div class="icon-text">
-                    <img class="icones-menu" src="assets/images/icons/ecommerce-cinza.png" alt="">
-                    <p>Ecommerce</p>
-                </div>
-                <img class="seta-menu" src="assets/images/icons/seta-para-baixo.png" alt="">
-            </div>
-        </a>
-
-        <a href="#">
-            <div class="menu-content">
-                <div class="icon-text">
-                    <img class="icones-menu" src="assets/images/icons/top-up-cinza.png" alt="">
-                    <p>Empréstimo</p>
-                </div>
-                <img class="seta-menu" src="assets/images/icons/seta-para-baixo.png" alt="">
-            </div>
-        </a>
-    </div>
-
-    <div class="logo-menu">
-        <img src="assets/images/logoverde.png" alt="">
-    </div>
-    </div>
-
     <div class="container-page">
         <div class="container-icones">
-            <div class="icones">
-                <div class="icon-menu">
-                    <button class="botao-open" onclick="openNav()">
-                        <img src="assets/images/icons/list.png" alt="">
-                    </button>
-                </div>
-                <div class="icon">
-                    <img src="assets/images/icons/house-cinza.png" alt="">
-                </div>
-                <div class="icon">
-                    <img src="assets/images/icons/coin-cinza.png" alt="">
-                </div>
-                <div class="icon">
-                    <img src="assets/images/icons/cooperation-cinza.png" alt="">
-                </div>
-                <button class="botao-open" onclick="openNav()">
-                    <div class="icon">
-                        <img src="assets/images/icons/notification.png" alt="">
+            <div class="content-icones">
+
+                <div class="icones">
+                    <div class="icon-menu">
+                        <button class="botao-open" id="botao-open">
+                            <img src="assets/images/icons/list.png" alt="">
+                        </button>
                     </div>
-                </button>
-                <div class="icon" id="icon-branco">
-                    <img src="assets/images/icons/notifications-fora-branco.png" alt="">
+                    <div class="icon">
+                        <div class="icon-text">
+                            <img src="assets/images/icons/house-cinza.png">
+                            <p>Home</p>
+                        </div>
+                    </div>
+                    <div class="icon">
+                        <div class="icon-text">
+                            <img class="icones-menu" src="assets/images/icons/coin-cinza.png" alt="">
+                            <p>Financeiro</p>
+                        </div>
+
+                    </div>
+                    <div class="icon">
+                        <div class="icon-text">
+                            <img class="icones-menu" src="assets/images/icons/cooperation-cinza.png" alt="">
+                            <p>Comercial</p>
+                        </div>
+
+                    </div>
+                    <div class="icon-notif">
+                        <div class="icon-text-notif">
+                            <div class="notif-branco">
+                                <img class="icones-menu" id="icon-branco"
+                                    src="assets/images/icons/notification-branco.png" alt="">
+                            </div>
+                            <p>Notificações</p>
+                        </div>
+
+                    </div>
+
+                    <div class="icon">
+                        <div class="icon-text">
+                            <img class="icones-menu" src="assets/images/icons/ecommerce-cinza.png" alt="">
+                            <p>Ecommerce</p>
+                        </div>
+
+                    </div>
+                    <div class="icon">
+                        <div class="icon-text">
+                            <img class="icones-menu" src="assets/images/icons/top-up-cinza.png" alt="">
+                            <p>Empréstimo</p>
+                        </div>
+
+                    </div>
                 </div>
-                <div class="icon">
-                    <img src="assets/images/icons/notifications-dentro-cinza.png" alt="">
-                </div>
-                <div class="icon">
-                    <img src="assets/images/icons/ecommerce-cinza.png" alt="">
-                </div>
-                <div class="icon">
-                    <img src="assets/images/icons/top-up-cinza.png" alt="">
+
+                <div class="logo-menu">
+                    <img src="assets/images/logoverde.png" alt="">
                 </div>
             </div>
         </div>
+
+
 
 
         <div class="principal">

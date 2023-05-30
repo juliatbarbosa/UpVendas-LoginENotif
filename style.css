@@ -133,74 +133,27 @@ a {
 /* ---------------------------------------------------PAGE NOTIFICAÇÕES------------------------------------------------------------------- */
 /* --------------------------------------------------------------------------------------------------------------------------------------- */
 
-/* -----------MENU LATERAL----------- */
 
-.oculto.p{
+.oculto {
+    width: 35px;
+}
+
+.oculto .p{
     display: none;
 }
 
-.menu {
-    background-color: #f6f6f6;
-    width: 0;
-    height: 100%;
-    z-index: 9;
-    position: fixed;
-    top: 0;
-    left: 0;
-    overflow-x: hidden;
-    transition: all ease 0.5s;
+.oculto .img {
+    display: none;
 }
 
-.icon-close {
-    margin: 10px 0 5px 15px;
-    width: 28px;
-    border: 0;
+.oculto .logo-menu {
+    display: none;
 }
 
-.menu-content {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    gap: 20px;
-    width: 250px;
-    border-radius: 8px;
-    margin: 0 12px;
+.oculto .icon-notif {
+    width: 25px;
 }
 
-.menu-content img {
-    height: 26px;
-    width: 26px;
-    margin: 10px 0 5px 5px;
-}
-
-.menu-content p {
-    padding-top: 3px;
-    font-size: 14px;
-}
-
-.menu-content p:hover {
-    color:#11cc59
-}
-
-.icon-text {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 10px;
-}
-
-#notif-menu{
-    background-color: #11cc59;
-    color: white;
-}
-
-#notif-menu img{
-    width: 26px;
-}
-
-.seta-menu{
-    width: 12px;
-}
 
 /* -----------ÍCONES PÁGINA PRINCIPAL----------- */
 
@@ -224,10 +177,46 @@ a {
     border: 0;
 }
 
+.icon-text {
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    gap: 15px;
+}
+
+.icon-text-notif{
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    gap: 8px;
+}
+
+.notif-branco {
+    background-color: #11cc59;
+    padding: 6px;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
 .botao-open { /* BOTÃO MENU */
     border: 0;
     background-color: transparent;
     cursor: pointer;
+}
+
+.icon{
+    width: 250px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+}
+
+.icon p {
+    padding-top: 3px;
+    font-size: 14px;
 }
 
 .icon img {
@@ -235,25 +224,36 @@ a {
     width: 26px;
 }
 
+.icon-text-notif p{
+    padding-top: 3px;
+    font-size: 14px;
+}
+
+.icon-text-notif {
+    background-color: #11cc59;
+    border-radius: 10px;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    color: white;
+}
+
+.icon-notif img {
+    width: 26px;
+}
+
+
 .logo-menu {
     display: flex;
     justify-content: center;
-    margin-top: 350px;
+    margin-top: 330px;
 }
 
 .logo-menu img {
     width: 70px;
 }
 
-#icon-branco {
-    width: 45px;
-    height: 40px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-color: #11cc59;
-    border-radius: 10px;
-}
+/* -----------PRINCIPAL----------- */
 
 .principal {
     display: flex;
@@ -406,7 +406,7 @@ tbody::-webkit-scrollbar-thumb {
 .styled-table td {
     text-align: left;
     width: 100%;
-    height: 30px;
+    height: 35px;
     padding: 5px 20px;
 }
 
@@ -437,7 +437,7 @@ table.styled-table tr:nth-child(odd){
 
 .id {
     width: 20% !important;
-    height: 30px;
+    height: 35px;
 }
 
 

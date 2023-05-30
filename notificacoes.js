@@ -1,5 +1,5 @@
 function openNav(){
-    document.getElementById('myNav').style.width='280px'
+    document.getElementById('myNav').style.width='270px'
 }
 
 function closeNav(){
@@ -9,6 +9,6 @@ function closeNav(){
 
 
 /* 
-nav-button = open-menu
+botao-open = open-menu
 id= myNav / class= overflay == id= menu  /
 */

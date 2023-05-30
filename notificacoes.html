@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 
 <head>
     <meta charset="UTF-8">
@@ -13,11 +13,11 @@
 
 <body>
 
-    <div id="myNav" class="overlay">
+    <div id="myNav" class="menu">
         <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">
-            <img class= "icon-close" src="assets/images/icons/list.png" alt="">
+            <img class="icon-close" src="assets/images/icons/list.png" alt="">
         </a>
-        <div id="overlay-content">
+        <div id="menu-content">
             <a href="#">
                 <div class="menu-content">
                     <div class="icon-text">
@@ -30,7 +30,7 @@
             <a href="#">
                 <div class="menu-content">
                     <div class="icon-text">
-                        <img src="assets/images/icons/coin-cinza.png" alt="">
+                        <img class="icones-menu" src="assets/images/icons/coin-cinza.png" alt="">
                         <p>Financeiro</p>
                     </div>
                     <img class="seta-menu" src="assets/images/icons/seta-para-baixo.png" alt="">
@@ -40,49 +40,57 @@
             <a href="#">
                 <div class="menu-content">
                     <div class="icon-text">
-                        <img src="assets/images/icons/cooperation-cinza.png" alt="">
+                        <img class="icones-menu" src="assets/images/icons/cooperation-cinza.png" alt="">
                         <p>Comercial</p>
                     </div>
                     <img class="seta-menu" src="assets/images/icons/seta-para-baixo.png" alt="">
 
                 </div>
             </a>
+
             <a href="#">
-                <div class="menu-content" id="notif-menu">
-                    <div class="icon-text">
-                        <img src="assets/images/icons/notification-branco.png" alt="">
-                        <p>Notificações</p>
-                    </div>
-                    <img class="seta-menu" src="assets/images/icons/seta-para-baixo-branca.png" alt="">
-                </div>
-            </a>
-            <a href="#">
-                <div class="menu-content">
-                    <div class="icon-text">
-                        <img src="assets/images/icons/ecommerce-cinza.png" alt="">
-                        <p>Ecommerce</p>
-                    </div>
-                    <img class="seta-menu" src="assets/images/icons/seta-para-baixo.png" alt="">
-                </div>
-            </a>
-            <a href="#">
-                <div class="menu-content">
-                    <div class="icon-text">
-                        <img src="assets/images/icons/top-up-cinza.png" alt="">
-                        <p>Empréstimo</p>
-                    </div>
-                    <img class="seta-menu" src="assets/images/icons/seta-para-baixo.png" alt="">
-                </div>
-            </a>
+                <a href="#" onclick="closeNav()">
+                    <div class="menu-content" id="notif-menu">
+                        <div class="icon-text">
+                            <img class="icones-menu" src="assets/images/icons/notification-branco.png" alt="">
+                            <p>Notificações</p>
+                            <img class="seta-menu" src="assets/images/icons/seta-para-baixo-branca.png" alt="">
+                        </div>
+                </a>
         </div>
+        </a>
+
+        <a href="#">
+            <div class="menu-content">
+                <div class="icon-text">
+                    <img class="icones-menu" src="assets/images/icons/ecommerce-cinza.png" alt="">
+                    <p>Ecommerce</p>
+                </div>
+                <img class="seta-menu" src="assets/images/icons/seta-para-baixo.png" alt="">
+            </div>
+        </a>
+
+        <a href="#">
+            <div class="menu-content">
+                <div class="icon-text">
+                    <img class="icones-menu" src="assets/images/icons/top-up-cinza.png" alt="">
+                    <p>Empréstimo</p>
+                </div>
+                <img class="seta-menu" src="assets/images/icons/seta-para-baixo.png" alt="">
+            </div>
+        </a>
     </div>
 
+    <div class="logo-menu">
+        <img src="assets/images/logoverde.png" alt="">
+    </div>
+    </div>
 
     <div class="container-page">
         <div class="container-icones">
             <div class="icones">
                 <div class="icon-menu">
-                    <button class="nav-button" onclick="openNav()">
+                    <button class="botao-open" onclick="openNav()">
                         <img src="assets/images/icons/list.png" alt="">
                     </button>
                 </div>
@@ -95,9 +103,11 @@
                 <div class="icon">
                     <img src="assets/images/icons/cooperation-cinza.png" alt="">
                 </div>
-                <div class="icon">
-                    <img src="assets/images/icons/notification.png" alt="">
-                </div>
+                <button class="botao-open" onclick="openNav()">
+                    <div class="icon">
+                        <img src="assets/images/icons/notification.png" alt="">
+                    </div>
+                </button>
                 <div class="icon" id="icon-branco">
                     <img src="assets/images/icons/notifications-fora-branco.png" alt="">
                 </div>

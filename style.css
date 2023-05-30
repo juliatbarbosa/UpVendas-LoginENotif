@@ -133,24 +133,13 @@ a {
 /* ---------------------------------------------------PAGE NOTIFICAÇÕES------------------------------------------------------------------- */
 /* --------------------------------------------------------------------------------------------------------------------------------------- */
 
-.container-page {
-    display: flex;
-    justify-content: start;
-    align-items: start;
-    margin: 10px;
+/* -----------MENU LATERAL----------- */
+
+.oculto.p{
+    display: none;
 }
 
-#myNav img {
-    width: 28px;
-}
-
-.nav-button {
-    border: 0;
-    background-color: transparent;
-    cursor: pointer;
-}
-
-.overlay {
+.menu {
     background-color: #f6f6f6;
     width: 0;
     height: 100%;
@@ -162,17 +151,10 @@ a {
     transition: all ease 0.5s;
 }
 
-.container-icones {
-    display: flex;
-    flex-direction: column;
-    align-items: start;
-    justify-content: center;
-}
-
-
-.close-menu {
+.icon-close {
+    margin: 10px 0 5px 15px;
+    width: 28px;
     border: 0;
-    background-color: transparent;
 }
 
 .menu-content {
@@ -185,19 +167,26 @@ a {
     margin: 0 12px;
 }
 
+.menu-content img {
+    height: 26px;
+    width: 26px;
+    margin: 10px 0 5px 5px;
+}
+
+.menu-content p {
+    padding-top: 3px;
+    font-size: 14px;
+}
+
+.menu-content p:hover {
+    color:#11cc59
+}
+
 .icon-text {
     display: flex;
-    justify-content: start;
+    justify-content: center;
     align-items: center;
-    gap: 20px;
-}
-
-.menu-content img {
-    margin: 5px 0 5px 5px;
-}
-
-.seta-menu{
-    width: 15px;
+    gap: 10px;
 }
 
 #notif-menu{
@@ -206,24 +195,54 @@ a {
 }
 
 #notif-menu img{
-    width: 28px;
+    width: 26px;
 }
 
-.icon-menu img {
+.seta-menu{
+    width: 12px;
+}
+
+/* -----------ÍCONES PÁGINA PRINCIPAL----------- */
+
+.container-page {
+    display: flex;
+    justify-content: start;
+    align-items: start;
+    margin: 10px;
+}
+
+.container-icones {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: center;
+}
+
+.icon-menu img { /* BOTÃO MENU */
     margin: 0 0 5px 5px;
     width: 28px;
     border: 0;
 }
 
-.icon-close {
-    margin: 10px 0 5px 15px;
-    width: 28px;
+.botao-open { /* BOTÃO MENU */
     border: 0;
+    background-color: transparent;
+    cursor: pointer;
 }
 
 .icon img {
     margin: 10px 0 5px 5px;
-    width: 28px;
+    width: 26px;
+}
+
+.logo-menu {
+    display: flex;
+    justify-content: center;
+    margin-top: 350px;
+}
+
+.logo-menu img {
+    width: 70px;
 }
 
 #icon-branco {
@@ -264,6 +283,11 @@ a {
     width: 35px;
     height: 3px;
     margin-bottom: 16px;
+}
+
+#notif-menu p {
+    color: white;
+    padding-right: 80px;
 }
 
 .pesquisa {

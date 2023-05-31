@@ -122,7 +122,9 @@ body {
 
 a {
     text-decoration: none;
+    color: black;
 }
+
 
 #textForm {
     font-size: 10px;
@@ -152,6 +154,15 @@ a {
 
 .oculto .icon-notif {
     width: 25px;
+}
+
+.menu-lateral ul .comercial-open.oculto  {
+    display: block;
+    
+}
+
+ .menu-lateral ul .comercial-open{
+    display: none;
 }
 
 
@@ -184,11 +195,23 @@ a {
     gap: 15px;
 }
 
+.seta-menu {
+    padding-top: 15px;
+    padding-right: 5px;
+}
+
+.seta-menu img {
+    width: 15px;
+}
+
 .icon-text-notif{
     display: flex;
     justify-content: start;
     align-items: center;
     gap: 8px;
+    color: white;
+    background-color: #11cc59;
+    border-radius: 10px;
 }
 
 .notif-branco {
@@ -207,19 +230,33 @@ a {
 }
 
 .icon{
-    width: 250px;
+    width: 220px;
     display: flex;
     justify-content: space-between;
     align-items: center;
     
+    
+}
+
+.icon-comercial{
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    gap: 8px;
+    
+}
+
+.icon-comercial img {
+    margin: 10px 0 5px 5px;
+    width: 20px;
 }
 
 .icon p {
-    padding-top: 3px;
+    padding-top: 5px;
     font-size: 14px;
 }
 
-.icon img {
+.icon-text img {
     margin: 10px 0 5px 5px;
     width: 26px;
 }
@@ -229,14 +266,6 @@ a {
     font-size: 14px;
 }
 
-.icon-text-notif {
-    background-color: #11cc59;
-    border-radius: 10px;
-    display: flex;
-    justify-content: start;
-    align-items: center;
-    color: white;
-}
 
 .icon-notif img {
     width: 26px;
@@ -246,12 +275,38 @@ a {
 .logo-menu {
     display: flex;
     justify-content: center;
-    margin-top: 330px;
+    position: fixed;
+    bottom: 30px;
+    left: 80px;
 }
 
 .logo-menu img {
     width: 70px;
 }
+
+ul {
+    list-style: none;
+}
+
+#comercial {
+    display: block;
+}
+
+.comercial-cima {
+    display: flex;
+    justify-content: space-between;
+}
+
+.comercial-open {
+    padding-left: 35px;
+}
+
+.comercial-open p {
+    font-size: 12px;
+}
+
+
+
 
 /* -----------PRINCIPAL----------- */
 

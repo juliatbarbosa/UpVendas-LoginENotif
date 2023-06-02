@@ -10,6 +10,8 @@
 body {
     background-color: #f9f9f9;
     font-family: 'Montserrat', sans-serif;
+    color: #4a4a4a;
+    opacity: 1;
 }
 
 .card {
@@ -18,7 +20,7 @@ body {
     align-items: center;
     width: 100vw;
     height: 100vh;
-    
+
 }
 
 .container-card {
@@ -69,7 +71,7 @@ body {
     outline: none;
     background: none;
     z-index: 1;
-    
+
 
 }
 
@@ -89,7 +91,7 @@ body {
 
 .input:focus {
     border: 1px solid #11cc59;
-    
+
 }
 
 .input:focus+.label {
@@ -98,9 +100,6 @@ body {
     z-index: 10;
     font-size: 10px;
     color: #11cc59;
-    
-
-
 }
 
 .submit {
@@ -122,7 +121,7 @@ body {
 
 a {
     text-decoration: none;
-    color: black;
+    color: #4a4a4a;
 }
 
 
@@ -140,7 +139,7 @@ a {
     width: 35px;
 }
 
-.oculto .p{
+.oculto .p {
     display: none;
 }
 
@@ -152,17 +151,22 @@ a {
     display: none;
 }
 
+.oculto .icon p {
+    display: none;
+}
+
 .oculto .icon-notif {
     width: 25px;
 }
 
-.menu-lateral ul .comercial-open.oculto  {
+.menu-lateral ul .comercial-open.oculto {
     display: block;
-    
+
 }
 
- .menu-lateral ul .comercial-open{
+.menu-lateral ul .comercial-open {
     display: none;
+
 }
 
 
@@ -173,6 +177,7 @@ a {
     justify-content: start;
     align-items: start;
     margin: 10px;
+    z-index: 9998;
 }
 
 .container-icones {
@@ -182,7 +187,8 @@ a {
     justify-content: center;
 }
 
-.icon-menu img { /* BOTÃO MENU */
+.icon-menu img {
+    /* BOTÃO MENU */
     margin: 0 0 5px 5px;
     width: 28px;
     border: 0;
@@ -204,7 +210,7 @@ a {
     width: 15px;
 }
 
-.icon-text-notif{
+.icon-text-notif {
     display: flex;
     justify-content: start;
     align-items: center;
@@ -223,27 +229,28 @@ a {
     align-items: center;
 }
 
-.botao-open { /* BOTÃO MENU */
+.botao-open {
+    /* BOTÃO MENU */
     border: 0;
     background-color: transparent;
     cursor: pointer;
 }
 
-.icon{
+.icon {
     width: 220px;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    
-    
+
+
 }
 
-.icon-comercial{
+.icon-comercial {
     display: flex;
     justify-content: start;
     align-items: center;
     gap: 8px;
-    
+
 }
 
 .icon-comercial img {
@@ -261,7 +268,7 @@ a {
     width: 26px;
 }
 
-.icon-text-notif p{
+.icon-text-notif p {
     padding-top: 3px;
     font-size: 14px;
 }
@@ -303,9 +310,270 @@ ul {
 
 .comercial-open p {
     font-size: 12px;
+    color: #78757549;
+}
+
+/* -----------FILTRO----------- */
+
+.filtro-container {
+    position: fixed;
+    top: 100px;
+    right: 15px;
+    margin: auto;
+    width: 700px;
+    height: 200px;
+    padding: 15px 15px;
+    border-radius: 8px;
+    background-color: white;
+    display: block;
+    opacity: 1;
+    z-index: 9999;
+    display: none;
+    box-shadow: 0px 0px 15px rgb(207, 205, 205);
+}
+
+.filtro-container::before {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 0;
+    bottom: 100%;
+    right: 10px;
+    border: .75rem solid transparent;
+    border-top: none;
+    
+    border-bottom-color: #fff;
+    filter: drop-shadow(0 -0.0625rem 0.0625rem rgba(0, 0, 0, .1));
+}
+
+.input-filtro-data {
+    position: relative;
+    height: 35px;
+    width: 100%;
+    margin-top: 10px;
+    margin-bottom: 20px;
+
+}
+.button-filtro {
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    gap: 10px;
+
+}
+
+.botao-limpar {
+    width: 150px;
+    height: 30px;
+    border: 2px solid #11cc59;
+    border-radius: 8px;
+    color: #11cc59;
+    background-color: white;
+    font-size: 15px;
+    cursor: pointer;
+
+}
+
+.botao-filtrar {
+    width: 150px;
+    height: 30px;
+    border: 1px solid #11cc59;
+    border-radius: 8px;
+    color: white;
+    background-color: #11cc59;
+    font-size: 15px;
+    cursor: pointer;
 }
 
 
+/* -----------POP UP----------- */
+
+@keyframes animacao {
+
+    to {
+        transform: translateY(0px);
+    }
+}
+
+@keyframes fechar {
+    from {
+        transform: translateY(0px);
+    }
+
+    to {
+        transform: translateY(600px);
+    }
+}
+
+textarea {
+    resize: none;
+}
+
+.popup {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    width: 900px;
+    height: 350px;
+    padding: 20px 15px;
+    box-shadow: 0px 0px 15px rgba(189, 187, 187, 0.805);
+    border-radius: 8px;
+    background-color: white;
+    display: none;
+    transform: translateY(600px);
+    opacity: 1;
+    z-index: 9999;
+}
+
+.popup#animar {
+    animation: animacao 1s forwards;
+
+}
+
+.popup-text p {
+    font-weight: bold;
+}
+
+.popup-text2 p {
+    font-size: 13px;
+}
+
+.popup-text img {
+    width: 35px;
+    height: 3px;
+    margin-bottom: 10px;
+}
+
+
+.input-popup-titulo {
+    position: relative;
+    height: 35px;
+    width: 100%;
+    margin-top: 10px;
+    margin-bottom: 20px;
+
+}
+
+.input-popup-msg {
+    position: relative;
+    height: 100px;
+    width: 100%;
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+
+.input-popup:focus+.label {
+    top: -7px;
+    left: 3px;
+    z-index: 10;
+    font-size: 12px;
+    color: #11cc59;
+    font-weight: 500;
+}
+
+.input-popup:focus {
+    border: 2px solid #11cc59;
+
+}
+
+.input-popup {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    border: 1px solid rgb(170, 170, 170);
+    border-radius: 8px;
+    font-size: 10px;
+    padding: 10px 15px;
+    outline: none;
+    background: none;
+    z-index: 1;
+    font-size: 13px;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.input-filtro:focus+.label {
+    top: -7px;
+    left: 3px;
+    z-index: 10;
+    font-size: 12px;
+    color: #11cc59;
+    font-weight: 500;
+}
+
+.input-filtro:focus {
+    border: 2px solid #11cc59;
+
+}
+
+.input-filtro {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    border: 1px solid rgb(170, 170, 170);
+    border-radius: 8px;
+    font-size: 10px;
+    padding: 10px 15px;
+    outline: none;
+    background: none;
+    z-index: 1;
+    font-size: 13px;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.filtro-input {
+    display: flex;
+    gap: 20px;
+}
+
+.popup-input label {
+    font-size: 12px;
+    font-weight: 500;
+}
+
+.filtro-input label {
+    font-size: 12px;
+    font-weight: 500;
+}
+
+.filtro-status label {
+    font-size: 12px;
+    font-weight: 500;
+}
+
+.button-popup {
+    padding-top: 33px;
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    gap: 10px;
+
+}
+
+.botao-cancelar {
+    width: 120px;
+    height: 25px;
+    border: 2px solid #11cc59;
+    border-radius: 8px;
+    color: #11cc59;
+    background-color: white;
+    font-size: 13px;
+    cursor: pointer;
+
+}
+
+.botao-salvar {
+    width: 120px;
+    height: 25px;
+    border: 1px solid #11cc59;
+    border-radius: 8px;
+    color: white;
+    background-color: #11cc59;
+    font-size: 13px;
+    cursor: pointer;
+}
 
 
 /* -----------PRINCIPAL----------- */
@@ -320,12 +588,13 @@ ul {
     display: flex;
     justify-content: space-between;
     flex: 1;
-    margin: 0 0 5px 10px;
+    margin: 0 5px 5px 10px;
 }
 
 .container-notificacao p {
-    font-weight: 500;
+    font-weight: bold;
     font-size: 20px;
+    color: #4a4a4a;
 }
 
 .notif-text {
@@ -401,16 +670,19 @@ ul {
     gap: 10px;
 }
 
+
+
 /* ----------------TABELA -------------------- */
 
-.tabela{
+.tabela {
     box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
     margin: 0px 10px 10px 10px;
     border-radius: 10px;
 }
 
 
-thead, tbody {
+thead,
+tbody {
     display: block;
     border-radius: 0 0 10px 10px;
 }
@@ -471,22 +743,22 @@ tbody::-webkit-scrollbar-thumb {
     height: 30px;
     border-bottom: 2px solid #11cc59;
     background-color: white;
-    color: #3f4755;
+    color: #4a4a4a;
     text-align: left;
     position: sticky;
     padding: 5px 20px;
-    
+
 }
 
 .styled-table img {
     width: 20px;
 }
 
-table.styled-table tr:nth-child(even){
-    background-color:#f6f6f6;
+table.styled-table tr:nth-child(even) {
+    background-color: #f6f6f6;
 }
 
-table.styled-table tr:nth-child(odd){
+table.styled-table tr:nth-child(odd) {
     background-color: white;
 }
 
@@ -494,7 +766,6 @@ table.styled-table tr:nth-child(odd){
     width: 20% !important;
     height: 35px;
 }
-
 
 
 /* ----------------FINAL------------------ */
@@ -508,7 +779,7 @@ table.styled-table tr:nth-child(odd){
 
 .textRodape p {
     font-size: 12px;
-    color: #3f4755;
+    color: #4a4a4a;
 }
 
 .textDireita {

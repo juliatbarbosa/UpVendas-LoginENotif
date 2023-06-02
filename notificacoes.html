@@ -11,7 +11,8 @@
 
 <body>
     <div class="container-page">
-        <div class="container-icones">
+
+        <div class="container-icones oculto">
             <div class="content-icones">
 
                 <div class="icones">
@@ -39,11 +40,13 @@
                             <li class="icon" id="comercial">
                                 <a href="#" class="comercial-cima">
                                     <div class="icon-text" id="icon-text-comercial">
-                                        <img class="icones-menu" id="icon-comercial" src="assets/images/icons/cooperation-cinza.png" alt="">
+                                        <img class="icones-menu" id="icon-comercial"
+                                            src="assets/images/icons/cooperation-cinza.png" alt="">
                                         <p class="p-comercial">Comercial</p>
                                     </div>
                                     <div class="seta-menu">
-                                        <img class="seta-comercial" src="assets/images/icons/seta-para-baixo.png" alt="">
+                                        <img class="seta-comercial" src="assets/images/icons/seta-para-baixo.png"
+                                            alt="">
                                     </div>
                                 </a>
                                 <ul class="comercial-open">
@@ -128,19 +131,83 @@
                         </div>
                     </div>
                     <div class="icones-dados">
-                        <div class="icone-lateral">
-                            <img src="assets/images/icons/reload.png" alt="">
-                        </div>
-                        <div class="icone-lateral">
-                            <img src="assets/images/icons/add.png" alt="">
-                        </div>
-                        <div class="icone-lateral">
-                            <img src="assets/images/icons/filter_vazio.png" alt="">
-                        </div>
+                        <a href="notificacoes.html">
+                            <div class="icone-lateral">
+                                <img src="assets/images/icons/reload.png" alt="">
+                            </div>
+                        </a>
+                        <a href="#">
+                            <div class="icone-lateral" id="icone-add">
+                                <img src="assets/images/icons/add.png" alt="">
+                            </div>
+                        </a>
+                        <a href="#">
+                            <div class="icone-lateral" id="icone-filter">
+                                <img class="icon-filter" src="assets/images/icons/filter_vazio.png" alt="">
+                            </div>
+                        </a>
                     </div>
                 </div>
             </div>
 
+            <div class="filtro">
+
+                <div class="filtro-container oculto">
+                    <div class="filtro-input">
+                        <div class="input-filtro-data">
+                            <input type="date" name="DataInicial" id="txttitulo" class="input-filtro">
+                            <label for="txttitulo" class="label">Data Inicial</label>
+                        </div>
+                        <div class="input-filtro-data">
+                            <input type="date" name="DataFinal" id="txttitulo" class="input-filtro">
+                            <label for="txttitulo" class="label">Data Final</label>
+                        </div>
+                    </div>
+                    <div class="filtro-status">
+                        <div class="input-filtro-data">
+                            <input type="text" name="Status" id="txttitulo" class="input-filtro">
+                            <label for="txttitulo" class="label">Status</label>
+                        </div>
+                    </div>
+                    <div class="button-filtro">
+                        <button class="botao-limpar" id="botao-limpar">
+                            Limpar Filtros
+                        </button>
+                        <button class="botao-filtrar" id="botao-filtrar">
+                            Filtrar
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="popup oculto" id="animar">
+                <div class="popup-text">
+                    <p>Nova Notificação Push</p>
+                    <img src="assets/images/icons/substract.png" alt="">
+                </div>
+                <div class="popup-input">
+                    <div class="input-popup-titulo">
+                        <input type="text" class="input-popup" id="txttitulo">
+                        <label for="txttitulo" class="label">Título</label>
+                    </div>
+                    <div class="input-popup-msg">
+                        <textarea class="input-popup" id="txtmsg" cols="100" rows="6"></textarea>
+                        <label for="txtmsg" class="label">Mensagem</label>
+                    </div>
+                </div>
+                <div class="popup-text2">
+                    <p>Ao enviar a notificação, é possível que o status pendente demore alguns minutos para ficar
+                        Concluído. Favor clicar no botão de recarregar para verificar.</p>
+                </div>
+                <div class="button-popup">
+                    <button class="botao-cancelar" id="botao-cancelar">
+                        Cancelar
+                    </button>
+                    <button class="botao-salvar" id="botao-salvar">
+                        Salvar
+                    </button>
+                </div>
+            </div>
 
             <div class="tabela">
                 <table class="styled-table">

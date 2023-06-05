@@ -155,7 +155,15 @@ a {
     display: none;
 }
 
+.oculto .seta-comercial {
+    display: none;
+}
+
 .oculto .icon-notif {
+    width: 25px;
+}
+
+.oculto .icon-text {
     width: 25px;
 }
 
@@ -200,6 +208,12 @@ a {
     align-items: center;
     gap: 15px;
 }
+
+
+.icon-text.oculto p {
+    display: none;
+}
+
 
 .seta-menu {
     padding-top: 15px;
@@ -250,6 +264,7 @@ a {
     justify-content: start;
     align-items: center;
     gap: 8px;
+    margin-left: 10px;
 
 }
 
@@ -310,7 +325,7 @@ ul {
 
 .comercial-open p {
     font-size: 12px;
-    color: #78757549;
+    color: #787575f0;
 }
 
 /* -----------FILTRO----------- */
@@ -384,6 +399,77 @@ ul {
     font-size: 15px;
     cursor: pointer;
 }
+
+.input-filtro:focus+.label {
+    top: -7px;
+    left: 3px;
+    z-index: 10;
+    font-size: 10px;
+    color: #11cc59;
+    font-weight: 500;
+}
+
+.input-filtro:focus {
+    border: 2px solid #11cc59;
+
+}
+
+.input-filtro {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    border: 1px solid rgb(170, 170, 170);
+    border-radius: 8px;
+    font-size: 10px;
+    padding: 10px 15px;
+    outline: none;
+    background: none;
+    z-index: 1;
+    font-size: 13px;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.filtro-input {
+    display: flex;
+    gap: 20px;
+}
+
+.filtro-status label {
+    font-size: 12px;
+    font-weight: 500;
+}
+
+.container-status {
+    position: relative;
+}
+
+.status {
+    width: 100%;
+    height: 35px;
+    border-radius: 8px;
+    margin-bottom: 30px;
+    border: 1px solid #AAAAAA;
+    padding: 5px;
+    color: #AAAAAA;
+    font-size: 12px;
+    font-family: 'Montserrat', sans-serif;
+    outline: none;
+}
+
+.status:focus+.label {
+    top: -7px;
+    left: 3px;
+    z-index: 10;
+    font-size: 10px;
+    color: #11cc59;
+    font-weight: 500;
+}
+
+.status:focus {
+    border: 2px solid #11cc59;
+
+}
+
 
 
 /* -----------POP UP----------- */
@@ -494,54 +580,12 @@ textarea {
     font-family: 'Montserrat', sans-serif;
 }
 
-.input-filtro:focus+.label {
-    top: -7px;
-    left: 3px;
-    z-index: 10;
-    font-size: 12px;
-    color: #11cc59;
-    font-weight: 500;
-}
-
-.input-filtro:focus {
-    border: 2px solid #11cc59;
-
-}
-
-.input-filtro {
-    position: absolute;
-    height: 100%;
-    width: 100%;
-    border: 1px solid rgb(170, 170, 170);
-    border-radius: 8px;
-    font-size: 10px;
-    padding: 10px 15px;
-    outline: none;
-    background: none;
-    z-index: 1;
-    font-size: 13px;
-    font-family: 'Montserrat', sans-serif;
-}
-
-.filtro-input {
-    display: flex;
-    gap: 20px;
-}
 
 .popup-input label {
     font-size: 12px;
     font-weight: 500;
 }
 
-.filtro-input label {
-    font-size: 12px;
-    font-weight: 500;
-}
-
-.filtro-status label {
-    font-size: 12px;
-    font-weight: 500;
-}
 
 .button-popup {
     padding-top: 33px;

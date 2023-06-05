@@ -127,7 +127,10 @@
                         </div>
                         <div class="content-dados-text">
                             <p>Nome</p>
-                            <p>sair</p>
+                            <a href="login.html">
+                                <p>sair</p>
+
+                            </a>
                         </div>
                     </div>
                     <div class="icones-dados">
@@ -163,11 +166,11 @@
                             <label for="txttitulo" class="label">Data Final</label>
                         </div>
                     </div>
-                    <div class="filtro-status">
-                        <div class="input-filtro-data">
-                            <input type="text" name="Status" id="txttitulo" class="input-filtro">
-                            <label for="txttitulo" class="label">Status</label>
-                        </div>
+                    <div class="container-status">
+                        <select name="status" id="Status" class="status">
+                            <option value="">Todos</option>
+                        </select>
+                        <label for="Status" class="label">Status</label>
                     </div>
                     <div class="button-filtro">
                         <button class="botao-limpar" id="botao-limpar">

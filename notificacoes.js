@@ -4,24 +4,33 @@ var menu = document.getElementById('botao-open')
 var container = document.querySelector('.container-icones')
 var notif = document.querySelector('.icon-notif')
 
+
 menu.onclick = e => {
-    if (container.classList.contains('oculto') || notif.classList.contains('oculto')) {
+    if (container.classList.contains('oculto') || notif.classList.contains('oculto')){
         container.classList.remove('oculto')
         notif.classList.remove('oculto')
+    }
+
+    else if (!container.classList.contains('oculto') || !notif.classList.contains('oculto')) {
+        container.classList.add('oculto')
+        notif.classList.add('oculto')
+
         comercialOpen.classList.remove('oculto')
         icone.setAttribute('src', 'assets/images/icons/cooperation-cinza.png');
         paragrafo.style.color = '#4a4a4a'
         seta.setAttribute('src', 'assets/images/icons/seta-para-baixo.png')
     }
 
-    else if (!container.classList.contains('oculto') || !notif.classList.contains('oculto')) {
-        container.classList.add('oculto')
-        notif.classList.add('oculto')
-    }
-
     else {
         container.classList.add('oculto')
         notif.classList.add('oculto')
+
+        comercialOpen.classList.remove('oculto')
+        icone.setAttribute('src', 'assets/images/icons/cooperation-cinza.png')
+        paragrafo.style.color = '#4a4a4a'
+        seta.setAttribute('src', 'assets/images/icons/seta-para-baixo.png')
+        
+
 
     }
 };
@@ -40,6 +49,9 @@ botaoComercial.onclick = e => {
         icone.setAttribute('src', 'assets/images/icons/cooperation.png');
         paragrafo.style.color = '#11cc59'
         seta.setAttribute('src', 'assets/images/icons/seta-para-cima-verde.png')
+
+        container.classList.remove('oculto')
+        notif.classList.remove('oculto')
 
 
     } else {
@@ -61,19 +73,19 @@ var tabela = document.querySelector('.tabela')
 var textRodape = document.querySelector('.textRodape')
 
 
+
 add.onclick = e => {
     if (popup.classList.contains('oculto')) {
         popup.style.animation = 'animacao 1s forwards'
         popup.classList.remove('oculto')
         popup.style.display = 'block'
+
         containerIcones.style.opacity = '.7'
         topo.style.opacity = '.7'
         tabela.style.opacity = '.7'
         textRodape.style.opacity = '.7'
-        filtro.classList.add('oculto')
-        filtro.style.display = 'none'
-        iconeFilter.setAttribute('src', 'assets/images/icons/filter_vazio.png');
-        filter.style.background = 'white'
+
+        
     }
 }
 
@@ -84,7 +96,7 @@ var cancelar = document.querySelector('.botao-cancelar')
 cancelar.onclick = e => {
     popup.style.animation = 'fechar 1s forwards'
     popup.classList.add('oculto')
-    /* page.style.opacity = '1' */
+
     containerIcones.style.opacity = '1'
     topo.style.opacity = '1'
     tabela.style.opacity = '1'
@@ -99,7 +111,6 @@ var salvar = document.querySelector('.botao-salvar')
 salvar.onclick = e => {
     popup.style.animation = 'fechar 1s forwards'
     popup.classList.add('oculto')
-    /* page.style.opacity = '1' */
     containerIcones.style.opacity = '1'
     topo.style.opacity = '1'
     tabela.style.opacity = '1'
@@ -118,6 +129,10 @@ filter.onclick = e => {
         filtro.style.display = 'block'
         filter.style.background = '#11cc59'
         iconeFilter.setAttribute('src', 'assets/images/icons/filter-branco.png');
+        containerIcones.style.opacity = '1'
+        topo.style.opacity = '1'
+        tabela.style.opacity = '1'
+        textRodape.style.opacity = '1'  
     }
 }
 

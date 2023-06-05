@@ -75,7 +75,12 @@ var textRodape = document.querySelector('.textRodape')
 
 
 add.onclick = e => {
-    if (popup.classList.contains('oculto')) {
+    if(!(perfil.classList.contains('oculto'))){
+        perfil.style.animation = 'fechar 1s forwards'
+        perfil.classList.add('oculto')
+    }
+
+    else if (popup.classList.contains('oculto')) {
         popup.style.animation = 'animacao 1s forwards'
         popup.classList.remove('oculto')
         popup.style.display = 'block'
@@ -84,6 +89,9 @@ add.onclick = e => {
         topo.style.opacity = '.7'
         tabela.style.opacity = '.7'
         textRodape.style.opacity = '.7'
+
+        perfil.style.display = 'none'
+        perfil.classList.add('oculto')
 
         
     }
@@ -156,8 +164,51 @@ filtrar.onclick = e => {
     filtro.style.display = 'none'
     iconeFilter.setAttribute('src', 'assets/images/icons/filter_vazio.png');
     filter.style.background = 'white'
+
 }
 
+/* ---------------------PERFIL--------------------- */
+
+var fotoPerfil = document.querySelector('.content-dados')
+var perfil = document.querySelector('.perfil')
 
 
+fotoPerfil.onclick = e => {
+    if (!(popup.classList.contains('oculto'))) {
+        popup.style.animation = 'fechar 1s forwards'
+        popup.classList.add('oculto')
 
+        containerIcones.style.opacity = '1'
+        topo.style.opacity = '1'
+        tabela.style.opacity = '1'
+        textRodape.style.opacity = '1'
+    }
+
+    else if (perfil.classList.contains('oculto')) {
+        perfil.style.animation = 'animacao 1s forwards'
+        perfil.classList.remove('oculto')
+        perfil.style.display = 'block'
+
+
+    }
+}
+
+/* ---------------------BOTÃO CANCELAR - ADICIONAR NOTIFICAÇÃO--------------------- */
+
+var cancelarPerfil = document.querySelector('.botao-cancelar-perfil')
+
+cancelarPerfil.onclick = e => {
+    perfil.style.animation = 'fechar 1s forwards'
+    perfil.classList.add('oculto')
+
+}
+
+/* ---------------------BOTÃO SALVAR - ADICIONAR NOTIFICAÇÃO--------------------- */
+
+var salvarPerfil = document.querySelector('.botao-salvar-perfil')
+
+salvarPerfil.onclick = e => {
+    perfil.style.animation = 'fechar 1s forwards'
+    perfil.classList.add('oculto')
+
+}
